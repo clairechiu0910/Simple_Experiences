@@ -7,8 +7,19 @@ var myData = {
         '0984200235',
         'clairechiu1997@gmail.com'
     ],
-    skill:[
-
+    skill:[{
+            topic: 'C / C++',
+            description: '實作搜尋引擎、各類演算法與資料結構'
+        }, {
+            topic: 'Asp.Net / Asp.Net Core',
+            description: ''
+        }, {
+            topic: 'Vue',
+            description: ''
+        }, {
+            topic: 'MySQL',
+            description: '建立資料庫、依照需求設計有效率的搜尋指令'
+        }
     ],
     projects:[{
             name: '利用DP實作支援模糊搜尋的搜尋網站', 
