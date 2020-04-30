@@ -26,8 +26,7 @@
                     <h4>Contact Information</h4>
                     <h2>聯絡資料</h2>
                     <ul class="CI">
-                        <li><i class="fas fa-mobile-alt"></i> 0952-579-528</li>
-                        <li><i class="fas fa-envelope"></i> a0952579528@gmail.com</li>
+                        <li v-for="item in contact">{{item}}</li>
                     </ul>
                 </div>
             </div>
@@ -35,41 +34,7 @@
                 <h4>Application Skill</h4>
                 <h2>應用技能</h2>
                 <ul class="listProgram">
-                    <li>Html
-                        <div class="bar">
-                            <div class="value p90"></div>
-                        </div>
-                    </li>
-                    <li>Css
-                        <div class="bar">
-                            <div class="value p70"></div>
-                        </div>
-                    </li>
-                    <li>Javascript
-                        <div class="bar">
-                            <div class="value p50"></div>
-                        </div>
-                    </li>
-                    <li>JQuery
-                        <div class="bar">
-                            <div class="value p70"></div>
-                        </div>
-                    </li>
-                    <li>Github
-                        <div class="bar">
-                            <div class="value p"></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="block">
-                <h4>Professional license</h4>
-                <h2>專業證照</h2>
-                <ul class="PI">
-                    <li>中華民國技術士 - 電腦軟體應用乙級</li>
-                    <li>中華民國技術士 - 電腦軟體應用丙級</li>
-                    <li>中華民國技術士 - 網頁設計丙級</li>
-                    <li>Internet and Computing Core Certification(IC3)</li>
+                    <li v-for="item in skill">{{item}}</li>
                 </ul>
             </div>
         </div>
@@ -80,33 +45,27 @@
                 <h2>自我介紹</h2>
                 <ul class="SI">
                     <li style="text-indent: 2em;line-height: 2">
-                        我是畢業於臺南科技⼤學資訊管理系的社會新鮮⼈，對於前端有著極⼤的興趣與熱情，個性活潑開朗，喜歡與⼈聊天，遇到挫折會想盡辦法去克服，平⽇裡喜歡聽⾳樂、看影片與學習新的coding。
+                        
                 </ul>
                 <h4>Work Experience</h4>
                 <h2>工作經歷</h2>
                 <ul class="SI">
                     <li style="text-indent: 2em;line-height: 2">
-                        畢業後第一份工作，是在摩摩迪科技有限公司公司當助理工程師，主要工作內容是根據設計師所提供的設計稿去完成網頁切板的工作，並依照後端工程師的需求把coding簡化來讓他方便串接資料等等事情，另外也有接過兩、三個網頁切板的案子，並且獨力完成。
-                        在這份工作中我學到了很多之前從未學過的語法或是css屬性等等，在這過程中難免也會遇到困難，但也都透過自己上網找資料解決或者是把自己的想法提出來，再跟後端工程師或設計師一起討論等等一一解決，當做出成品後會讓我非常開心與充滿成就感，也讓我對如何寫coding更加的熟悉。
+                        
                 </ul>
             </div>
             <div class="block">
                 <h4>Works</h4>
-                <h2>切版經驗</h2>
+                <h2></h2>
                 <ul class="listExperience">
                     <li class="year">2018
                         <ul>
-                            <li>求職履歷表製作</li>
-                            <li>Piano_OnePage</li>
-                            <li>甜點電商首頁網頁切版</li>
+                            
                         </ul>
                     </li>
                     <li class="year">2019
                         <ul>
-                            <li>摩摩迪官網</li>
-                            <li>集寵洗澡間</li>
-                            <li>生技臺北</li>
-                            <li>風暴模特活動頁面</li>
+                            
                         </ul>
                     </li>
                 </ul>
