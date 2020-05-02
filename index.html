@@ -6,74 +6,78 @@
     <meta charset="UTF-8">
     <meta name="robots" content="noindex">
     <title>My Resume</title>
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
 </head>
 
 <body>
-    <div id="my-resume" class="resume">
+    <div id="my-resume">
         <div class="left">
-            <h1>邱莉淩</h1>
-            <h5>(Chiu Li-Lin)</h5>
-            <h4>我的履歷</h4>
-            <hr>
-            <div class="block">
-                <h4>Basic Information</h4>
+            <div>
+                <h1>邱莉淩</h1>
+                <h5>(Chiu Li-Lin)</h5>
+                <h4>我的履歷</h4>
+            </div>
+
+            <div>
                 <h2>學歷</h2>
                 <ul class="BI">
                     <li v-for='item in education'>{{item}}</li>
                 </ul>
-                <div class="block">
-                    <h4>Contact Information</h4>
-                    <h2>聯絡資料</h2>
-                    <ul class="CI">
-                        <li v-for="item in contact">{{item}}</li>
-                    </ul>
-                </div>
             </div>
-            <div class="block">
-                <h4>Application Skill</h4>
-                <h2>應用技能</h2>
-                <ul class="listProgram">
-                    <li v-for="item in skill">{{item}}</li>
+
+            <div>
+                <h2>聯絡資料</h2>
+                <ul class="CI">
+                    <li v-for="item in contact">{{item}}</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>專題研究</h2>
+                <ul>
+                    <template v-for="item in projects">
+                        <h3>{{item.name}}</h3>
+                        <template v-for="element in item.description">
+                            <h4>{{element.topic}}</h4>
+                            <label>{{element.description}}</label>
+                        </template>
+                    </template>
                 </ul>
             </div>
         </div>
-        <div class="right">
-            <div class="decoration"></div>
-            <div class="block">
-                <h4>Self Introduction</h4>
-                <h2>自我介紹</h2>
-                <ul class="listProgram">
 
+        <div class="right">
+            <div>
+                <h2>實作經驗</h2>
+                <ul>
+                    <template v-for="item in experiences">
+                        <h3>{{item.field}}</h3>
+                        <template v-for="element in item.skills">
+                            <h4>{{element.name}}</h4>
+                            <label>{{element.description}}</label>
+                        </template>
+                    </template>
                 </ul>
-                </ul>
-                <h4>Work Experience</h4>
-                <h2>工作經歷</h2>
-                <ul class="listProgram">
-                    
-                </ul> 
             </div>
-            <div class="block">
-                <h4>Works</h4>
-                <h2></h2>
+
+            <div>
+                <h2>比賽經驗</h2>
                 <ul class="listExperience">
-                    <li class="year">2018
-                        <ul>
-                            
-                        </ul>
-                    </li>
-                    <li class="year">2019
-                        <ul>
-                            
-                        </ul>
-                    </li>
+                    <li v-for="item in contest">{{item}}</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>其他活動經驗</h2>
+                <ul class="listExperience">
+                    <li v-for="item in other">{{item}}</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'>
-    </script><script  src="./script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
