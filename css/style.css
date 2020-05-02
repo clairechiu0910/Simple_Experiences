@@ -4,19 +4,29 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.row {
+.section {
     border-radius: 10px;
     background-color: rgba(185, 185, 185, 0.27);
     padding: 20px;
-    margin: 20px;
-}
-
-.row .with-line {
-    border-bottom: 1px rgb(255, 255, 255) solid;
+    margin: 30px;
 }
 
 .display-inline {
+    width: 45%;
+    padding-left: 35px;
     display: inline-block;
+}
+
+.display-block{
+    display: block;
+    width: 100%;
+}
+
+.b-line{
+    padding-left: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px rgb(212, 225, 239) solid;
 }
 
 .list-item {

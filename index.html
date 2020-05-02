@@ -12,24 +12,23 @@
 </head>
 
 <body>
-    <div id="my-resume" class="container mt-5 p-3">
-        <div class="row with-line">
-            <div class="col-sm">
+    <div id="my-resume" class="container mt-3 p-3">
+        <div class="row section">
+            <div class="display-block b-line">
                 <h1>邱莉淩</h1>
                 <h5>(Chiu Li-Lin)</h5>
-                <div class="ml-5">
+            </div>
+            <div class="row display-block">
+                <div class="display-inline">
                     <h4 v-for='item in education'>{{item}}</h4>
                 </div>
-            </div>
-
-            <div class="col-sm">
-                <div class="mt-5 pt-4">
+                <div class="display-inline">
                     <h4 v-for="item in contact">{{item}}</h4>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row section">
             <div class="list-item">
                 <h2>專題研究</h2>
                 <div class="p-2" v-for="item in projects">
@@ -42,7 +41,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row section">
             <div class="list-item">
                 <h2>實作經驗</h2>
                 <div class="p-2" v-for="item in experiences">
@@ -55,7 +54,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row section">
             <div class="list-item">
                 <h2>其他</h2>
                 <div class="p-2">
