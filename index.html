@@ -14,16 +14,24 @@
 <body>
     <div id="my-resume" class="container mt-3 p-3">
         <div class="row section">
-            <div class="display-block b-line">
+            <div class="block b-line">
                 <h1>邱莉淩</h1>
                 <h5>(Chiu Li-Lin)</h5>
             </div>
-            <div class="row display-block">
-                <div class="display-inline">
-                    <h4 v-for='item in education'>{{item}}</h4>
+            <div class="block">
+                <div class="inline">
+                    <template v-for='item in education'>
+                        <h4>{{item.school}}</h4>
+                        <h4>( {{item.time}} )</h4>
+                    </template>
                 </div>
-                <div class="display-inline">
-                    <h4 v-for="item in contact">{{item}}</h4>
+                <div class="inline">
+                    <div class="block" v-for="item in contact">
+                        <a :href="item.href">
+                            <img :src="'./icon/' + item.title + '.png'"></img>
+                            <h4>{{item.context}}</h4>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

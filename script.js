@@ -1,11 +1,25 @@
 var myData = {
-    education:[
-        '北一女中 畢業',
-        '中正資工 畢業'
+    education:[{
+            school: '北一女中 畢業',
+            time: '2013.9 - 2016-6'
+        }, {
+            school: '中正資工 畢業',
+            time: '2016.9 - 2020-1'
+        }
     ],
-    contact:[
-        '0984200235',
-        'clairechiu1997@gmail.com'
+    contact:[{
+            title: 'email',
+            href: 'mailto:clairechiu1997@gmail.com',
+            context: 'clairechiu1997@gmail.com',
+        }, {
+            title: 'phone',
+            href: 'tel:+886-984-200-235',
+            context: '0984200235'
+        }, {
+            title: 'github',
+            href: 'https://github.com/clairechiu0910',
+            context: 'https://github.com/clairechiu0910'
+        }        
     ],
     projects:[{
             name: '利用DP實作支援模糊搜尋的搜尋網站', 
