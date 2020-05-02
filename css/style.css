@@ -32,9 +32,8 @@ body {
 .list-item h3::before {
     content: " ";
     display: inline-block;
-    width: 20px;
-    height: 8px;
-    border-radius: 3px;
+    width: 10px;
+    height: 10px;
     background-color: rgb(212, 225, 239);
     margin-left: 50px;
     margin-right: 15px;
