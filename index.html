@@ -6,78 +6,72 @@
     <meta charset="UTF-8">
     <meta name="robots" content="noindex">
     <title>My Resume</title>
-    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div id="my-resume">
-        <div class="left">
-            <div>
+    <div id="my-resume" class="container mt-5 p-3">
+        <div class="row with-line">
+            <div class="col-sm">
                 <h1>邱莉淩</h1>
                 <h5>(Chiu Li-Lin)</h5>
-                <h4>我的履歷</h4>
+                <div class="ml-5">
+                    <h4 v-for='item in education'>{{item}}</h4>
+                </div>
             </div>
 
-            <div>
-                <h2>學歷</h2>
-                <ul class="BI">
-                    <li v-for='item in education'>{{item}}</li>
-                </ul>
+            <div class="col-sm">
+                <div class="mt-5 pt-4">
+                    <h4 v-for="item in contact">{{item}}</h4>
+                </div>
             </div>
+        </div>
 
-            <div>
-                <h2>聯絡資料</h2>
-                <ul class="CI">
-                    <li v-for="item in contact">{{item}}</li>
-                </ul>
-            </div>
-
-            <div>
+        <div class="row with-line">
+            <div class="list-item">
                 <h2>專題研究</h2>
-                <ul>
-                    <template v-for="item in projects">
-                        <h3>{{item.name}}</h3>
-                        <template v-for="element in item.description">
-                            <h4>{{element.topic}}</h4>
-                            <label>{{element.description}}</label>
-                        </template>
+                <div class="p-2" v-for="item in projects">
+                    <h3>{{item.name}}</h3>
+                    <template v-for="element in item.description">
+                        <h4>{{element.topic}}</h4>
+                        <h5>{{element.description}}</h5>
                     </template>
-                </ul>
+                </div>
             </div>
         </div>
 
-        <div class="right">
-            <div>
+        <div class="row with-line">
+            <div class="list-item">
                 <h2>實作經驗</h2>
-                <ul>
-                    <template v-for="item in experiences">
-                        <h3>{{item.field}}</h3>
-                        <template v-for="element in item.skills">
-                            <h4>{{element.name}}</h4>
-                            <label>{{element.description}}</label>
-                        </template>
+                <div class="p-2" v-for="item in experiences">
+                    <h3>{{item.field}}</h3>
+                    <template v-for="element in item.skills">
+                        <h4>{{element.name}}</h4>
+                        <h5>{{element.description}}</h5>
                     </template>
-                </ul>
-            </div>
-
-            <div>
-                <h2>比賽經驗</h2>
-                <ul class="listExperience">
-                    <li v-for="item in contest">{{item}}</li>
-                </ul>
-            </div>
-
-            <div>
-                <h2>其他活動經驗</h2>
-                <ul class="listExperience">
-                    <li v-for="item in other">{{item}}</li>
-                </ul>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
-    <script src="./script.js"></script>
+        <div class="row">
+            <div class="list-item">
+                <h2>其他</h2>
+                <div class="p-2">
+                    <h3>比賽經驗</h3>
+                    <h4 v-for="item in contest">{{item}}</h4>
+                </div>
+
+                <div class="p-2">
+                    <h3>課外活動</h3>
+                    <h4 v-for="item in other">{{item}}</h4>
+                </div>
+            </div>
+        </div>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
+        <script src="./script.js"></script>
 </body>
 
 </html>
