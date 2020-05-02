@@ -92,8 +92,11 @@ var myData = {
         }, {
             field: 'Web Development',
             skills: [{
-                name: '利用MySQL建立資料庫,並設計搜尋指令',
-                description: ''
+                name: 'Titansoft 2020下學期 學年實習生',
+                description: '網頁全端維護、開發網頁系統'
+            }, {
+                name: 'MySQL',
+                description: '建立資料庫, 並設計搜尋指令'
             }, {
                 name: 'Asp.Net / Asp.Net Core',
                 description: '用C#寫網頁後端；JQuery、html寫前端，用MVC架構開發'
