@@ -93,7 +93,7 @@ var myData = {
             field: 'Web Development',
             skills: [{
                 name: 'Titansoft 2020下學期 學年實習生',
-                description: '網頁全端維護、開發網頁系統'
+                description: 'Asp.Net, Asp.Net Core, Quartz, NUnit, DI, DB Context, Entity Framework, Store Procedure, Jenkins, XSS攻擊, CI/CD, Vue.js, git, C#, JQuery, JavaScript'
             }, {
                 name: 'MySQL',
                 description: '建立資料庫, 並設計搜尋指令'
@@ -101,7 +101,7 @@ var myData = {
                 name: 'Asp.Net / Asp.Net Core',
                 description: '用C#寫網頁後端；JQuery、html寫前端，用MVC架構開發'
             }, {
-                name: 'Vue',
+                name: 'Vue.js',
                 description: ''
             }]
         }, {
