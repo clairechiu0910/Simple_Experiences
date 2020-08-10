@@ -95,14 +95,26 @@ var myData = {
                 name: 'Titansoft 2020下學期 學年實習生',
                 description: 'Asp.Net, Asp.Net Core, Quartz, NUnit, DI, DB Context, Entity Framework, Store Procedure, Jenkins, XSS攻擊, CI/CD, Vue.js, git, C#, JQuery, JavaScript'
             }, {
-                name: 'MySQL',
-                description: '建立資料庫, 並設計搜尋指令'
+                name: 'Data Base',
+                description: 'MySQL, DB Context, Entity Framework' 
             }, {
                 name: 'Asp.Net / Asp.Net Core',
                 description: '用C#寫網頁後端；JQuery、html寫前端，用MVC架構開發'
             }, {
                 name: 'Vue.js',
                 description: ''
+            }, {
+                name: 'CI / CD',
+                description: 'git CI/CD, Jenkins'
+            }, {
+                name: 'Scheduler',
+                description: 'Quartz'
+            }, {
+                name: 'Front End',
+                description: 'JavaScript, JQuery, html, css, DataTable, DatePicker, Moment.js, bootstrap'
+            }, {
+                name: 'Unit Test',
+                description: 'NUnit'
             }]
         }, {
             field: 'Firmware Development',
