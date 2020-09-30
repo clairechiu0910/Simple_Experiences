@@ -12,10 +12,6 @@ var myData = {
             href: 'mailto:clairechiu1997@gmail.com',
             context: 'clairechiu1997@gmail.com',
         }, {
-            title: 'phone',
-            href: 'tel:+886-984-200-235',
-            context: '0984200235'
-        }, {
             title: 'github',
             href: 'https://github.com/clairechiu0910',
             context: 'https://github.com/clairechiu0910'
